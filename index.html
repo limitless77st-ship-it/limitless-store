@@ -1,0 +1,60 @@
+<!-- 1-MAHSULOT -->
+<div class="card">
+    <img src="images/kurtka.jpg" alt="Kurtka">
+    <h3 data-uz="Qishki kurtka" data-ru="Зимняя куртка"></h3>
+    <p class="price">490 000 so‘m</p>
+    <select>
+        <option>S</option><option>M</option><option>L</option><option>XL</option>
+    </select>
+    <button class="btn" onclick="addToCart('Qishki kurtka', 490000)">Savatchaga qo‘shish</button>
+</div>
+
+<!-- 2-MAHSULOT -->
+<div class="card">
+    <img src="images/kurtka2.jpg" alt="Kurtka">
+    <h3 data-uz="Qizlar kurtkasi" data-ru="Женские куртка"></h3>
+    <p class="price">420 000 so‘m</p>
+    <select>
+        <option>S</option><option>M</option><option>L</option><option>XL</option>
+    </select>
+    <button class="btn" onclick="addToCart('Bahor kurtkasi', 420000)">Savatchaga qo‘shish</button>
+</div>
+
+<!-- Shu shaklda 10 ta mahsulot qo‘shishingiz mumkin -->
+
+</div>
+
+<!-- BUYURTMA FORMA -->
+<div style="margin-top:30px; background:#fff; color:#000; padding:20px; border-radius:12px;">
+    <h2 data-uz="Buyurtma berish" data-ru="Оформить заказ"></h2>
+    <form id="orderForm">
+        <label data-uz="Ism" data-ru="Имя"></label><br>
+        <input type="text" id="name" required style="width:100%; padding:8px; margin-bottom:10px;"><br>
+
+        <label data-uz="Telefon raqam" data-ru="Телефон"></label><br>
+        <input type="tel" id="phone" required style="width:100%; padding:8px; margin-bottom:10px;"><br>
+
+        <label data-uz="Manzil" data-ru="Адрес"></label><br>
+        <input type="text" id="address" required style="width:100%; padding:8px; margin-bottom:10px;"><br>
+
+        <button type="submit" class="btn" style="width:100%;">Buyurtmani yuborish / Отправить</button>
+    </form>
+</div>
+
+<!-- SAVATCHA -->
+<div id="cart">
+    <h3>🛒 Savatcha</h3>
+    <ul id="cartItems"></ul>
+    <p><b>Jami:</b> <span id="total">0</span> so‘m</p>
+    <a id="orderBtn" class="btn" target="_blank">Telegramga yuborish</a>
+    <a id="payBtn" class="btn" target="_blank">Click/Payme bilan to‘lash</a>
+</div>
+
+<footer>
+<p>📞 +998 99 039 97 11</p>
+<p>📦 Vodiy bo‘ylab yetkazib berish mavjud</p>
+<p>📲 Telegram: @only_lancelott</p>
+</footer>
+
+</body>
+</html>
